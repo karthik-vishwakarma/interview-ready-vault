@@ -7,13 +7,11 @@ questions ranging from core language mechanics to advanced architectural pattern
 
 Each category is divided into **Easy**, **Medium**, and **Hard** levels to help you track your progress.
 
-### 🚀 [Java](./Java/README.md)
-
-### 🏗️ [Design Patterns](./DesignPatterns/README.md)
-
-### 📒 [Spring Framework](./SpringFramework/README.md)
-
-### 🏗️ [System Design](./SystemDesign/README.md)
+1. [Java](./Java/README.md)
+2. [Design Patterns](./DesignPatterns/README.md)
+3. [Spring Framework](./SpringFramework/README.md)
+4. [System Design](./SystemDesign/README.md)
+5. [Data Structures and Algorithms (DSA)](./DSA/README.md)
 
 ## 📊 Difficulty Guide
 
