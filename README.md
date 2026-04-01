@@ -13,6 +13,8 @@ Each category is divided into **Easy**, **Medium**, and **Hard** levels to help 
 
 ### 📒 [Spring Framework](./SpringFramework/README.md)
 
+### 🏗️ [System Design](./SystemDesign/README.md)
+
 ## 📊 Difficulty Guide
 
 Every topic is classified into three levels:
