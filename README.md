@@ -12,6 +12,7 @@ Each category is divided into **Easy**, **Medium**, and **Hard** levels to help 
 3. [Spring Framework](./SpringFramework/README.md)
 4. [System Design](./SystemDesign/README.md)
 5. [Data Structures and Algorithms (DSA)](./DSA/README.md)
+6. [AWS](./AWS/README.md)
 
 ## 📊 Difficulty Guide
 
