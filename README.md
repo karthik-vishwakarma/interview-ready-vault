@@ -8,3 +8,4 @@ questions ranging from core language mechanics to advanced architectural pattern
 Each category is divided into **Easy**, **Medium**, and **Hard** levels to help you track your progress.
 
 ### 🚀 [Java](./Java/README.md)
+### 🏗️ [Design Patterns](./DesignPatterns/README.md)
