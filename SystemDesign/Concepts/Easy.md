@@ -32,5 +32,54 @@ a distributed system, you can only guarantee two out of the three during a netwo
 1. **CP (Consistency/Partition):** Ensures all nodes see the same data, but some may be unavailable during a split.
 2. **AP (Availability/Partition):** The system remains functional, but some nodes might return stale data.
 
+### Q4: What is a Message Queue and when should you use asynchronous communication?
+
+**Answer:** A Message Queue is a form of asynchronous service-to-service communication used in serverless and
+microservices architectures.
+
+* **When to use:** Use it for time-consuming tasks (e.g., image processing), to decouple services, and to smooth out
+  traffic spikes (load leveling).
+* **Benefits:** Improved system reliability and scalability.
+
+### Q5: What are Idempotent APIs and why are they important?
+
+**Answer:** An idempotent API is one where multiple identical requests have the same effect as a single request.
+
+* **Importance:** In distributed systems, network failures lead to retries. Without idempotency, a retry on a "
+  Pay $10" request could result in a $20 charge.
+
+### Q6: What is Backpressure and how do you handle it?
+
+**Answer:** Backpressure occurs when a data producer outpaces a data consumer, leading to buffer overflows.
+
+* **Handling:**
+    1. **Drop:** Discard new messages.
+    2. **Buffer:** Queue messages (until memory runs out).
+    3. **Control:** The consumer signals the producer to slow down.
+
+### Q7: What is Observability and how do you design for monitoring?
+
+**Answer:** Observability is the ability to measure the internal state of a system by examining its outputs.
+
+* **The Three Pillars:**
+    1. **Metrics:** Aggregated data (CPU, Latency).
+    2. **Logging:** Detailed events (Errors, User actions).
+    3. **Tracing:** Path of a request across microservices.
+
+### Q8: What is Distributed Locking and when is it required?
+
+**Answer:** A mechanism to ensure that only one process in a distributed system can access a shared resource at a time.
+
+* **Requirement:** Essential for preventing race conditions in tasks like scheduled jobs or inventory updates across
+  multiple server instances.
+
+### Q9: How would you design a System for High Availability (HA)?
+
+**Answer:** HA is achieved by removing single points of failure.
+
+* **Redundancy:** Multi-AZ (Availability Zone) deployments.
+* **Failover:** Health checks and automatic leader election (Zookeeper/Etcd).
+* **Replication:** Keep data synchronized across nodes.
+
 ---
 [⬅️ Back to System Design Index](README.md)

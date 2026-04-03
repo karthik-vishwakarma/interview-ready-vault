@@ -87,5 +87,22 @@ public interface NotificationProvider {
 }
 ```
 
+### Q11: How would you handle Data Partitioning at scale?
+
+**Answer:** Data partitioning (sharding) involves breaking a large dataset into smaller parts.
+
+* **Horizontal:** Sharding by rows based on a Partition Key.
+* **Vertical:** Splitting columns into different tables/databases.
+* **Strategies:** Range-based, Hash-based (Consistent Hashing), or Directory-based.
+
+### Q12: What is the Eventual Consistency vs. Strong Consistency trade-off?
+
+**Answer:**
+
+* **Strong Consistency:** After an update, every subsequent access returns the updated value (High Latency,
+  Low Availability).
+* **Eventual Consistency:** Accesses will eventually return the last updated value (Low Latency, High Availability).
+* **Trade-off:** Based on the PACELC theorem (extension of CAP).
+
 ---
 [⬅️ Back to Concepts Index](README.md) | [Home 🏠](../README.md)
