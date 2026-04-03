@@ -50,5 +50,26 @@
 4. **Consistency:** Choose between Write-Through (updates DB and cache simultaneously) or Write-Around (updates DB,
    invalidates cache).
 
+Features:
+
+* SET key value
+* GET key
+* TTL support
+* Persistence
+
+Tech stack:
+
+* Java / Go / C++
+
+Concepts demonstrated:
+
+* Memory management
+* Hashmaps
+* Multithreading
+* Storage internals
+
+Hiring impact:*****
+This separates average students from top engineers.
+
 ---
 [⬅️ Back to Concepts Index](./README.md)

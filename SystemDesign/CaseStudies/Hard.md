@@ -9,6 +9,31 @@
 3. **Storage:** NoSQL (Key-Value) like DynamoDB or Cassandra works well because we only need simple lookups.
 4. **Logic:** Use Base62 encoding on a unique counter or an MD5 hash of the original URL.
 
+Features:
+
+* Shorten URL
+* Redirect to original URL
+* Analytics (click count)
+* Expiry support
+* Rate limiting
+
+Tech stack:
+
+* Java + Spring Boot
+* PostgreSQL
+* Redis (caching)
+* Optional: Kafka
+
+Concepts demonstrated:
+
+* System Design fundamentals
+* Database design
+* Caching
+* Scalability
+
+Hiring impact:*****
+This is asked in interviews very frequently.
+
 ### Q2: How would you design a scalable chat system (WhatsApp/Messenger)?
 
 **Answer:**
@@ -19,6 +44,29 @@
     * **Presence Service:** Tracks online/offline status.
     * **Message Store:** Distributed NoSQL (Cassandra/HBase) for message history.
 3. **Flow:** Use a Message Queue (Kafka) to handle message delivery and offline notifications.
+
+Features:
+
+* 1-to-1 chat
+* Group chat
+* Online/offline status
+* Message persistence
+
+Tech stack:
+
+* WebSockets
+* Java + Spring Boot
+* Redis
+* PostgreSQL
+
+concepts demonstrate:
+
+* Real-time communication
+* Event-driven architecture
+* Concurrency
+
+Hiring impact:*****
+Very impressive for interviews.
 
 ### Q3: How would you design a news feed system like Twitter?
 
@@ -54,6 +102,24 @@
 2. **Latency:** Use a specialized "Map Service" for ETA calculations and routing.
 3. **Storage:** Use a NoSQL database (Cassandra) for ride history and a fast Geospatial index (Redis) for active driver
    locations.
+
+Features:
+
+* Rider requests ride
+* Driver matching
+* Trip management
+* Location tracking
+* Pricing calculation
+
+Concepts demonstrated:
+
+* Real-time systems
+* Matching algorithms
+* Database modeling
+* State management
+
+Hiring impact:*****
+Shows real backend engineering capability.
 
 ### Q7: How would you design a Payment Processing System (Stripe/PayPal)?
 
