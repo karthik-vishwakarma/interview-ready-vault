@@ -1,19 +1,34 @@
 site_name: Interview Ready Vault
 site_description: A comprehensive vault for Java, Spring, System Design, and DSA.
 
-docs_dir: .
+docs_dir: docs_link
+site_dir: site
 
-# Prevents system files from appearing in your menu
+# Suppress the 2026 political warning in the terminal
+extra:
+  python_interrupt_on_signal: true
+
 exclude_docs: |
   mkdocs.yml
+  docs_link
+  site
+  run_local.sh
   .github/*
   .git/*
   LICENSE
   Sample/*
-  Sample
+  venv/*
+  .gitignore
 
 theme:
   name: material
+  # This helps clean up the UI for nested folders
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -27,13 +42,13 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - search.suggest
+  custom_dir: overrides
+
+# This handles the relative links better
+use_directory_urls: true
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
