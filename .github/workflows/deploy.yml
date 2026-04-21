@@ -2,13 +2,14 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main  # Make sure your branch is named 'main'
+      - main
 
 permissions:
-  contents: write  # Crucial: Gives the action permission to create the gh-pages branch
+  contents: write
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Silences the Node 20 warnings
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  NO_MKDOCS_2_WARNING: true
 
 jobs:
   deploy:
@@ -18,13 +19,17 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5 # Upgraded from v4 to v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install MkDocs Material
+      - name: Install Stable Dependencies
         run: |
-          pip install mkdocs-material
+          pip install "mkdocs>=1.5.0,<2.0.0" "mkdocs-material>=9.5.0,<10.0.0"
 
-      - name: Build and Deploy to GitHub Pages
+      # --- THIS IS THE FIX ---
+      - name: Create virtual docs link
+        run: ln -s . docs_link
+
+      - name: Build and Deploy
         run: mkdocs gh-deploy --force

@@ -13,12 +13,12 @@ exclude_docs: |
   docs_link
   site
   run_local.sh
+  extra.css
+  overrides/*
   .github/*
   .git/*
   LICENSE
   Sample/*
-  venv/*
-  .gitignore
 
 theme:
   name: material
