@@ -1,48 +1,39 @@
 site_name: Interview Ready Vault
-site_description: A comprehensive vault for Java, Spring, System Design, and DSA preparation.
-site_author: Your Name
+site_description: A comprehensive vault for Java, Spring, System Design, and DSA.
+
+docs_dir: .
+
+# Prevents system files from appearing in your menu
+exclude_docs:
+  - mkdocs.yml
+  - ".github/*"
+  - ".git/*"
+  - "LICENSE"
+  - "Sample/*"
+  - "Sample"
 
 theme:
   name: material
-  language: en
   palette:
-    # This provides a toggle for Light and Dark mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
-      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.sections    # Groups folders into visual sections
-    - navigation.expand      # Keeps the sidebar organized
-    - navigation.top         # Adds a "Back to top" button
-    - navigation.tracking    # Highlights the menu as you scroll
-    - search.suggest         # Fast search suggestions
-    - search.highlight       # Highlights search terms in text
-    - content.code.copy      # Adds a "Copy" button to code blocks
-
-# Plugins
-plugins:
-  - search
-
-# Generic Logic:
-# We omit the 'nav' section entirely.
-# MkDocs will now automatically map your folder structure to the sidebar.
-# Folders become Categories, and .md files become Pages.
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
