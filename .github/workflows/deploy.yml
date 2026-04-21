@@ -2,27 +2,29 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main
+      - main  # Make sure your branch is named 'main'
 
 permissions:
-  contents: write
+  contents: write  # Crucial: Gives the action permission to create the gh-pages branch
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Silences the Node 20 warnings
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5 # Upgraded from v4 to v5
         with:
-          python-version: 3.x
+          python-version: '3.x'
 
       - name: Install MkDocs Material
         run: |
           pip install mkdocs-material
 
       - name: Build and Deploy to GitHub Pages
-        # This command builds the site and pushes it to a hidden 'gh-pages' branch
         run: mkdocs gh-deploy --force
