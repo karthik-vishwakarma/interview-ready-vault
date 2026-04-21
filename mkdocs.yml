@@ -4,13 +4,13 @@ site_description: A comprehensive vault for Java, Spring, System Design, and DSA
 docs_dir: .
 
 # Prevents system files from appearing in your menu
-exclude_docs:
-  - mkdocs.yml
-  - ".github/*"
-  - ".git/*"
-  - "LICENSE"
-  - "Sample/*"
-  - "Sample"
+exclude_docs: |
+  mkdocs.yml
+  .github/*
+  .git/*
+  LICENSE
+  Sample/*
+  Sample
 
 theme:
   name: material
