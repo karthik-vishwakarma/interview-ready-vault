@@ -1,11 +1,11 @@
-1. What is the difference between laaS, PaaS and SaaS
+1. What is the difference between LaaS, PaaS and SaaS
 2. What is virtualization and how does a hypervisor work
 3. What is the difference between containers and virtual machines
 4. What is Docker and how does it work internally
 5. What is Kubernetes and what problem does it solve
-   What are pods, deployments and services in Kubernetes
+6. What are pods, deployments and services in Kubernetes
 7. What is the difference between ClusterIP, NodePort and LoadBalancer
-8. What is auto scaling and how is it implemented in cloud platforms
+8. What is auto-scaling and how is it implemented in cloud platforms
 9. What is the difference between horizontal scaling and vertical scaling
 10. What is a load balancer and how does it work
 11. What is a VPC and why is it required
@@ -17,12 +17,12 @@
 17. What is Infrastructure as Code and what tools are commonly used
 18. What is Terraform and how does state management work
 19. What is CI CD and how is it implemented in cloud environments
-20. What is blue green deployment and how does it differ from rolling deployment
+20. What is blue-green deployment and how does it differ from rolling deployment
 21. What is observability and what are logs, metrics and traces
 22. What is the difference between object storage and block storage
 23. What is a CDN and how does it improve performance
 24. What is serverless computing and when should you use it
-25. How would you design a highly available and fault tolerant system in the cloud
+25. How would you design a highly available and fault-tolerant system in the cloud
 26. What is the difference between availability zone and region in cloud platforms
 27. How does DNS work in a cloud environment
 28. What is a reverse proxy and how is it used in cloud architectures
