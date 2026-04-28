@@ -4,7 +4,7 @@ Select a sub-topic to begin practicing. Each section contains questions classifi
 
 ## 🔍 Sub-Topics
 
-1. [Core & Language Fundamentals](Core&LanguageFundamentals/README.md)
+1. [Core & Language Fundamentals](Core-Language-Fundamentals/README.md)
     * Concepts: Data types, Autoboxing, OOPs (Inheritance, Polymorphism, etc.), Exception Handling, and Strings.
     * Why: The foundation of every technical screening.
 2. Collections Framework
