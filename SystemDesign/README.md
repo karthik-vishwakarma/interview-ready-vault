@@ -3,6 +3,8 @@
 System Design interviews test your ability to design large-scale distributed systems. This section focuses on
 architectural patterns, trade-offs (CAP Theorem), and real-world case studies.
 
+[Practice Website](https://paperdraw.dev/)
+
 ## 🏗️ Core Pillars
 
 Each sub-topic contains concepts and design patterns essential for high-level architecture.
