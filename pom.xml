@@ -4,6 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- zanwix-bom runs zanwix-git-hook-injector-plugin in every build under it: any mvn run here
+         installs the pre-commit and pre-push hooks that block direct commits and pushes to the
+         protected branches (zanwix.git.hook.protected.branches). -->
+    <parent>
+        <groupId>com.zanwix.frameworks</groupId>
+        <artifactId>zanwix-bom</artifactId>
+        <version>1.0.0</version>
+        <relativePath/>
+    </parent>
+
     <groupId>com.kartik.interview</groupId>
     <artifactId>interview-ready-vault</artifactId>
     <version>1.0-SNAPSHOT</version>
